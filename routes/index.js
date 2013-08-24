@@ -1,7 +1,4 @@
-var mongodb = require("mongodb").MongoClient;
-
-
-
+var User = require("modules/user");
 /*
  * GET home page.
  */
@@ -14,12 +11,14 @@ exports.login = function(req,res){
     var user = req.param("username");
     var password = req.param("password");
     var isSave = req.param("isSave");
-    MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
-        if(err) throw err;
-
-        var collection = db.getCollection("user");
-        var info = collection.findOne({username:user, password:password, enable:1});
-
-
+    User.get(user, password, function(info){
+       if(info != null){
+           req.session.User = info;
+           res.redirect("/main");
+       }
     });
+}
+
+exports.main = function(req, res){
+
 }
