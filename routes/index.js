@@ -16,9 +16,8 @@ exports.login = function(req,res){
            req.session.User = info;
            res.redirect("/main");
        }
+        else{
+           res.redirect("/");
+       }
     });
-}
-
-exports.main = function(req, res){
-
 }
