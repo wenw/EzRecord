@@ -1,0 +1,45 @@
+﻿
+body {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+.title {
+    background-color: #463265;
+    color: #fff;
+}
+
+/*---------custom theme for bootstrap-------------*/
+.navbar-inverse .navbar-nav > li > a {
+    color: #cdbfe3;
+}
+
+.panel-custom {
+    border-color: #755AA0;
+}
+
+    .panel-custom > .panel-heading {
+        background-color: #755AA0;
+        border-color: #755AA0;
+        color: #fff;
+    }
+
+.btn-custom {
+    color: #fff;
+    background-color: #755aa0;
+    border-color: #463265;
+}
+
+/*-------------------------------------------------*/
+.region {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+  }

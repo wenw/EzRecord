@@ -2,8 +2,16 @@
 
       <form class="form-signin" action="/login" method="post">
         <h2 class="form-signin-heading">登陆</h2>
-        <input name="username" type="text" class="input-block-level" placeholder="用户名">
-        <input name="password" type="password" class="input-block-level" placeholder="密码">
+        <div class="row">
+            <div class="col-md-4">
+                <input name="username" type="text" class="form-control" placeholder="用户名">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input name="password" type="password" class="form-control" placeholder="密码">
+            </div>
+        </div>
         <label class="checkbox">
           <input name="isSave" type="checkbox" value="remember-me"> 记住密码
         </label>
@@ -11,4 +19,4 @@
         <a href="/reg">注册账号？</a>
       </form>
 
-    </div> <!-- /container -->
+</div> <!-- /container -->
